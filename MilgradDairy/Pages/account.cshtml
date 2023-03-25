@@ -1,0 +1,44 @@
+@page
+@{
+    ViewBag.Title = "Milgrad Dairy | account";
+}
+
+<div class="card-container">
+    <div class="card-item product-card">
+        <h1>create an account:</h1>
+    </div>
+
+    <div class="card-item white-card" id="form-card">
+        <form action="account.html" id="account-form">
+            <select name="title" id="title" required>
+                <option value="" selected disabled>title:</option>
+                <option value="Mr">Mr</option>
+                <option value="Ms">Ms</option>
+                <option value="Mx">Mx</option>
+            </select>
+            <label for="fname">first name:</label>
+            <input type="text" id="fname" name="fname" pattern="[A-Za-z]+" required>
+            <label for="lname">last name:</label>
+            <input type="text" id="lname" name="lname" pattern="[A-Za-z]+" required>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="pwd">password:</label>
+            <input type="password" id="pwd" name="pwd" required>
+            <br><label for="check-terms">i have read the terms and conditions <a href="terms.html" target="_blank">here</a></label>
+            <input type="checkbox" id="check-terms" name="check-terms" required>
+            <br><input type="submit" value="submit">
+        </form>
+    </div>
+
+    <div class="card-item white-card">
+        <video controls autoplay muted>
+            <source src="assets/video/love.mp4" type="video/mp4">
+            Sorry, your browser does not support this video :(
+        </video>
+    </div>
+</div>
+
+<div class="all-products">
+    <img src="assets/all-products.png" alt="Our product range">
+    <a href="all.html" class="submit-button">see all products</a>
+</div>
